@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refund Policy | HOMIES Trading</title>
+
+    <meta name="description" content="Refund Policy for HOMIES Trading memberships, subscription cancellations, duplicate payments, unauthorized transactions, and membership access issues.">
+
+    <style>
+        :root {
+            --bg: #08090c;
+            --surface: #0f1116;
+            --surface-2: #14171d;
+            --border: #242832;
+            --text: #f2f3f5;
+            --muted: #a7abb5;
+            --accent: #ffffff;
+            --max-width: 920px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.75;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            opacity: 0.75;
+        }
+
+        .container {
+            width: min(calc(100% - 40px), var(--max-width));
+            margin: 0 auto;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding: 70px 0 55px;
+            background:
+                radial-gradient(
+                    circle at top center,
+                    rgba(255, 255, 255, 0.055),
+                    transparent 42%
+                ),
+                var(--bg);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 28px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .brand-mark {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.08;
+            letter-spacing: -0.04em;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 22px 0 0;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 28px;
+            margin-top: 30px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .meta strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        main {
+            padding: 55px 0 90px;
+        }
+
+        .notice {
+            margin-bottom: 42px;
+            padding: 22px 24px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--surface);
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .notice strong {
+            color: var(--text);
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            margin: 0 0 18px;
+            padding-top: 8px;
+            font-size: 25px;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            margin: 28px 0 10px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 0 0 15px;
+            color: var(--muted);
+        }
+
+        ul,
+        ol {
+            margin: 12px 0 18px;
+            padding-left: 24px;
+            color: var(--muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li::marker {
+            color: #777d88;
+        }
+
+        .highlight {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 50px 0;
+        }
+
+        .footer {
+            border-top: 1px solid var(--border);
+            padding: 35px 0 45px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 18px;
+        }
+
+        .footer-brand {
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                width: min(calc(100% - 28px), var(--max-width));
+            }
+
+            .header {
+                padding: 48px 0 40px;
+            }
+
+            main {
+                padding: 40px 0 65px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            .notice {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <div class="brand">
+            <span class="brand-mark"></span>
+            HOMIES Trading
+        </div>
+
+        <h1>Refund Policy</h1>
+
+        <p class="subtitle">
+            This Refund Policy explains how cancellations, refund requests,
+            duplicate payments, unauthorized transactions, and membership
+            access issues are handled by HOMIES Trading.
+        </p>
+
+        <div class="meta">
+            <span><strong>Effective Date:</strong> 28 September 2026</span>
+            <span><strong>Last Updated:</strong> 28 September 2026</span>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+    <div class="container">
+
+        <div class="notice">
+            <strong>Please read this policy before purchasing.</strong>
+            By purchasing a HOMIES Trading membership, you acknowledge that
+            you have reviewed this Refund Policy and understand how
+            cancellations and refund requests are handled.
+        </div>
+
+
+        <section>
+            <h2>1. General Refund Policy</h2>
+
+            <p>
+                HOMIES Trading provides subscription-based membership services
+                that may include access to private Discord channels, trading
+                content, market notifications, live classes, educational
+                materials, Q&amp;A sessions, archives, and other member-only
+                benefits.
+            </p>
+
+            <p>
+                Because membership access and digital services may become
+                available immediately after successful payment, membership
+                payments are generally
+                <span class="highlight">non-refundable once processed</span>,
+                except where a refund is approved under this policy or required
+                by applicable law.
+            </p>
+
+            <p>
+                This policy applies to both monthly and yearly membership
+                subscriptions.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>2. Monthly Memberships</h2>
+
+            <p>
+                Monthly membership payments are generally non-refundable once
+                the payment has been successfully processed.
+            </p>
+
+            <p>
+                Cancelling a monthly subscription normally prevents the next
+                renewal but does not automatically refund the current billing
+                period.
+            </p>
+
+            <p>
+                You may continue to have access to eligible membership benefits
+                until the end of the already-paid billing period, subject to
+                the applicable membership terms and any suspension or
+                termination provisions.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>3. Yearly Memberships</h2>
+
+            <p>
+                Yearly membership payments are generally non-refundable once
+                the payment has been successfully processed.
+            </p>
+
+            <p>
+                Cancelling a yearly subscription normally prevents future
+                renewal but does not automatically refund the unused portion
+                of the current yearly billing period.
+            </p>
+
+            <p>
+                Any exception to this general rule will be considered according
+                to this Refund Policy and applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>4. Cancellation Does Not Automatically Mean a Refund</h2>
+
+            <p>
+                Cancelling your membership and requesting a refund are separate
+                actions.
+            </p>
+
+            <p>
+                Cancellation generally stops future recurring charges. It does
+                not by itself create an entitlement to a refund for a payment
+                that has already been processed.
+            </p>
+
+            <p>
+                Members should cancel their subscriptions before the next
+                renewal date if they do not wish to continue the membership.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>5. Duplicate Payments</h2>
+
+            <p>
+                If you believe that you were charged more than once for the
+                same membership transaction due to a duplicate payment, contact
+                HOMIES Trading as soon as possible.
+            </p>
+
+            <p>
+                After reviewing the relevant transaction information, an
+                eligible duplicate charge may be refunded to the original
+                payment method.
+            </p>
+
+            <p>
+                You may be asked to provide transaction details or other
+                information reasonably necessary to verify the duplicate
+                payment.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>6. Unauthorized Transactions</h2>
+
+            <p>
+                If you believe a membership payment was made without your
+                authorization, contact HOMIES Trading as soon as possible.
+            </p>
+
+            <p>
+                We may review the transaction and request information reasonably
+                necessary to determine whether the transaction appears to have
+                been unauthorized.
+            </p>
+
+            <p>
+                Where an unauthorized transaction is verified and a refund is
+                appropriate, the refund will generally be issued to the
+                original payment method, subject to the payment provider's
+                procedures and applicable law.
+            </p>
+
+            <p>
+                If you believe your payment method has been compromised, you
+                should also contact your bank or payment provider.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>7. Technical Access Issues</h2>
+
+            <p>
+                If you have successfully paid for a membership but cannot
+                access the membership services because of a technical issue,
+                contact HOMIES Trading so the issue can be investigated.
+            </p>
+
+            <p>
+                Our first approach will generally be to
+                <span class="highlight">resolve or restore the membership access</span>
+                where reasonably possible.
+            </p>
+
+            <p>
+                If a verified technical access issue cannot reasonably be
+                resolved and the paid membership service cannot be provided,
+                a refund may be considered.
+            </p>
+
+            <p>
+                Refund consideration may depend on the nature and duration of
+                the issue, the services already provided, the applicable
+                payment provider, and applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>8. Refund Requests</h2>
+
+            <p>
+                Refund requests should be submitted by email:
+            </p>
+
+            <p>
+                <span class="highlight">Email:</span>
+                <a href="mailto:fxkumud@gmail.com">fxkumud@gmail.com</a>
+            </p>
+
+            <p>
+                To help us review your request, include:
+            </p>
+
+            <ul>
+                <li>Your name or membership information.</li>
+                <li>The email address used for the purchase.</li>
+                <li>The membership plan involved.</li>
+                <li>The date of the transaction.</li>
+                <li>Relevant transaction or payment details.</li>
+                <li>A clear explanation of the reason for your request.</li>
+            </ul>
+
+            <p>
+                Do not send full card numbers, passwords, one-time passwords,
+                authentication codes, or other sensitive payment credentials
+                by email.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>9. Review of Refund Requests</h2>
+
+            <p>
+                Each refund request may be reviewed based on the circumstances
+                of the transaction and the applicable provisions of this policy.
+            </p>
+
+            <p>
+                A refund request does not automatically guarantee a refund.
+            </p>
+
+            <p>
+                We may request additional information when reasonably necessary
+                to verify a transaction or understand the circumstances of the
+                request.
+            </p>
+
+            <p>
+                Nothing in this policy is intended to exclude or restrict any
+                rights or remedies that cannot lawfully be excluded or
+                restricted under applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>10. Approved Refunds</h2>
+
+            <p>
+                Where a refund is approved, it will generally be issued to the
+                original payment method used for the transaction.
+            </p>
+
+            <p>
+                HOMIES Trading may not be able to redirect an approved refund
+                to an unrelated payment method or third-party account.
+            </p>
+
+            <p>
+                The time required for a refund to appear in your account may
+                depend on the payment processor, bank, card issuer, or other
+                financial institution.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>11. Payment Provider Processing</h2>
+
+            <p>
+                Membership payments may be processed through third-party
+                payment and subscription providers.
+            </p>
+
+            <p>
+                Payment providers may have their own processing times,
+                procedures, verification requirements, and transaction
+                policies.
+            </p>
+
+            <p>
+                Once HOMIES Trading has initiated an approved refund, the
+                remaining processing time may be outside our direct control.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>12. Membership Suspension or Termination</h2>
+
+            <p>
+                If a membership is suspended or terminated because of a
+                violation of the HOMIES Trading Terms &amp; Conditions,
+                community rules, unauthorized sharing of member-only content,
+                fraud, abuse, or other prohibited conduct, the member will
+                generally not be entitled to a refund for the remaining
+                membership period.
+            </p>
+
+            <p>
+                This does not affect any rights that may apply under
+                mandatory applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>13. Change of Mind</h2>
+
+            <p>
+                Refunds are generally not provided solely because a member
+                changes their mind after purchasing a membership, does not use
+                the available benefits, or decides that the membership is no
+                longer suitable for their personal needs.
+            </p>
+
+            <p>
+                Members are encouraged to review the applicable membership plan,
+                pricing, benefits, and Terms &amp; Conditions before completing
+                a purchase.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>14. Membership Benefits and Availability</h2>
+
+            <p>
+                Membership benefits may vary by plan and may be updated,
+                modified, rescheduled, replaced, or discontinued as described
+                in the applicable Terms &amp; Conditions.
+            </p>
+
+            <p>
+                A temporary change or interruption to an individual feature
+                does not automatically create an entitlement to a refund,
+                particularly where the overall membership service remains
+                available.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>15. Trading-Related Outcomes</h2>
+
+            <p>
+                Refunds are not provided based solely on trading performance,
+                trading losses, missed opportunities, market movements, or
+                disagreement with a trade idea, market analysis, educational
+                material, or trading outcome.
+            </p>
+
+            <p>
+                HOMIES Trading does not guarantee profits, returns, or any
+                particular financial result from the use of its services.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>16. Third-Party Platform Issues</h2>
+
+            <p>
+                HOMIES Trading may depend on third-party platforms such as
+                Discord, payment providers, hosting services, and membership
+                management platforms.
+            </p>
+
+            <p>
+                Temporary outages, account restrictions, platform changes, or
+                technical problems originating from a third-party service do
+                not automatically create an entitlement to a refund.
+            </p>
+
+            <p>
+                Where a verified third-party issue prevents a member from
+                receiving the purchased service for a material period, HOMIES
+                Trading may review the circumstances and determine an
+                appropriate resolution, including restoration of access or,
+                where appropriate, a refund.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>17. No Double Recovery</h2>
+
+            <p>
+                A member should not seek or receive duplicate compensation for
+                the same transaction through multiple channels.
+            </p>
+
+            <p>
+                If a payment dispute, chargeback, bank reversal, or payment
+                provider claim has already been initiated for a transaction,
+                HOMIES Trading may coordinate the matter through the applicable
+                payment process rather than issuing a separate duplicate refund.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>18. Chargebacks and Payment Disputes</h2>
+
+            <p>
+                Members are encouraged to contact HOMIES Trading first regarding
+                legitimate billing or access issues so that the matter can be
+                reviewed and resolved where possible.
+            </p>
+
+            <p>
+                Nothing in this section is intended to prevent a member from
+                exercising rights available under applicable law or through
+                their payment provider.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>19. Contact</h2>
+
+            <p>
+                For refund requests, billing questions, duplicate payments,
+                unauthorized transaction concerns, or membership access issues,
+                contact:
+            </p>
+
+            <p>
+                <span class="highlight">HOMIES Trading</span><br>
+                <span class="highlight">Email:</span>
+                <a href="mailto:fxkumud@gmail.com">fxkumud@gmail.com</a>
+            </p>
+        </section>
+
+
+        <div class="divider"></div>
+
+
+        <section>
+            <h2>20. Policy Updates</h2>
+
+            <p>
+                HOMIES Trading may update this Refund Policy from time to time
+                to reflect changes in the membership service, payment
+                procedures, operational practices, or applicable requirements.
+            </p>
+
+            <p>
+                The updated version will be published on this page with a
+                revised update date where appropriate.
+            </p>
+
+            <p>
+                Continued use of the membership services after an updated
+                policy becomes effective constitutes acceptance of the updated
+                policy, subject to applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>21. Governing Law</h2>
+
+            <p>
+                This Refund Policy shall be governed by and interpreted in
+                accordance with the laws of
+                <span class="highlight">India</span>, subject to applicable law.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>22. Final Note</h2>
+
+            <p>
+                HOMIES Trading aims to handle refund and billing matters
+                fairly, consistently, and transparently while maintaining the
+                nature of its subscription-based digital membership service.
+            </p>
+
+            <p>
+                For any question regarding a specific transaction, contact us
+                at the email address above with the relevant transaction
+                information so that the matter can be reviewed.
+            </p>
+        </section>
+
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">HOMIES Trading</div>
+
+            <div>
+                © 2026 HOMIES Trading. All rights reserved.
+            </div>
+
+            <div>
+                <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
