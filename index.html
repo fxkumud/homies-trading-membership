@@ -11,13 +11,15 @@
         content="Official legal and policy information for HOMIES Trading memberships, including Terms & Conditions and Refund Policy."
     >
 
+    <meta name="robots" content="index, follow">
+
     <style>
         :root {
             --bg: #08090c;
             --surface: #0f1116;
             --surface-hover: #14171d;
             --border: #242832;
-            --border-hover: #343945;
+            --border-hover: #3a3f4a;
             --text: #f2f3f5;
             --muted: #a7abb5;
             --accent: #ffffff;
@@ -45,6 +47,8 @@
                 Arial,
                 sans-serif;
             line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
         }
 
         a {
@@ -57,18 +61,21 @@
             margin: 0 auto;
         }
 
-        /* Header */
+        /* =========================
+           HEADER
+        ========================= */
 
         .header {
             min-height: 78vh;
             display: flex;
             align-items: center;
             border-bottom: 1px solid var(--border);
+
             background:
                 radial-gradient(
-                    circle at 50% 10%,
+                    circle at 50% 8%,
                     rgba(255, 255, 255, 0.07),
-                    transparent 40%
+                    transparent 42%
                 ),
                 var(--bg);
         }
@@ -83,6 +90,7 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 30px;
+
             color: var(--muted);
             font-size: 13px;
             font-weight: 700;
@@ -93,14 +101,19 @@
         .brand-mark {
             width: 8px;
             height: 8px;
+            flex: 0 0 8px;
+
             border-radius: 50%;
             background: var(--accent);
-            box-shadow: 0 0 16px rgba(255, 255, 255, 0.25);
+
+            box-shadow:
+                0 0 16px rgba(255, 255, 255, 0.25);
         }
 
         h1 {
             max-width: 780px;
             margin: 0;
+
             font-size: clamp(46px, 8vw, 76px);
             line-height: 1.02;
             letter-spacing: -0.055em;
@@ -110,12 +123,14 @@
         .hero-text {
             max-width: 680px;
             margin: 28px 0 0;
+
             color: var(--muted);
             font-size: 18px;
         }
 
         .effective {
             margin-top: 28px;
+
             color: var(--muted);
             font-size: 14px;
         }
@@ -125,7 +140,9 @@
             font-weight: 600;
         }
 
-        /* Main */
+        /* =========================
+           MAIN
+        ========================= */
 
         main {
             padding: 85px 0 100px;
@@ -133,6 +150,7 @@
 
         .section-label {
             margin-bottom: 14px;
+
             color: var(--muted);
             font-size: 12px;
             font-weight: 700;
@@ -142,6 +160,7 @@
 
         h2 {
             margin: 0;
+
             font-size: 32px;
             line-height: 1.2;
             letter-spacing: -0.035em;
@@ -150,11 +169,14 @@
         .intro {
             max-width: 680px;
             margin: 18px 0 42px;
+
             color: var(--muted);
             font-size: 16px;
         }
 
-        /* Policy Cards */
+        /* =========================
+           POLICY CARDS
+        ========================= */
 
         .policies {
             display: grid;
@@ -165,25 +187,40 @@
         .policy-card {
             display: flex;
             flex-direction: column;
+
             min-height: 270px;
             padding: 30px;
+
             border: 1px solid var(--border);
             border-radius: 16px;
+
             background: var(--surface);
+
             transition:
                 border-color 0.2s ease,
                 background 0.2s ease,
-                transform 0.2s ease;
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
         }
 
         .policy-card:hover {
             border-color: var(--border-hover);
             background: var(--surface-hover);
-            transform: translateY(-2px);
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.22);
+        }
+
+        .policy-card:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 4px;
         }
 
         .card-number {
             margin-bottom: 45px;
+
             color: var(--muted);
             font-size: 12px;
             font-weight: 700;
@@ -192,6 +229,7 @@
 
         .policy-card h3 {
             margin: 0 0 12px;
+
             font-size: 22px;
             line-height: 1.3;
             letter-spacing: -0.025em;
@@ -199,6 +237,7 @@
 
         .policy-card p {
             margin: 0;
+
             color: var(--muted);
             font-size: 14px;
         }
@@ -206,6 +245,7 @@
         .card-link {
             margin-top: auto;
             padding-top: 28px;
+
             color: var(--text);
             font-size: 14px;
             font-weight: 600;
@@ -214,6 +254,7 @@
         .card-link span {
             display: inline-block;
             margin-left: 5px;
+
             transition: transform 0.2s ease;
         }
 
@@ -221,18 +262,23 @@
             transform: translateX(4px);
         }
 
-        /* Notice */
+        /* =========================
+           NOTICE
+        ========================= */
 
         .notice {
             margin-top: 55px;
             padding: 25px 27px;
+
             border: 1px solid var(--border);
             border-radius: 14px;
+
             background: var(--surface);
         }
 
         .notice-title {
             margin-bottom: 8px;
+
             color: var(--text);
             font-size: 14px;
             font-weight: 650;
@@ -240,29 +286,36 @@
 
         .notice p {
             margin: 0;
+
             color: var(--muted);
             font-size: 14px;
         }
 
-        /* Contact */
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact {
             margin-top: 90px;
             padding-top: 55px;
+
             border-top: 1px solid var(--border);
         }
 
         .contact p {
             max-width: 650px;
             margin: 16px 0 0;
+
             color: var(--muted);
         }
 
         .email {
             display: inline-block;
             margin-top: 18px;
+
             color: var(--text);
             font-weight: 600;
+
             text-decoration: underline;
             text-underline-offset: 4px;
         }
@@ -271,11 +324,14 @@
             opacity: 0.75;
         }
 
-        /* Footer */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             border-top: 1px solid var(--border);
             padding: 32px 0 42px;
+
             color: var(--muted);
             font-size: 13px;
         }
@@ -284,6 +340,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             flex-wrap: wrap;
             gap: 18px;
         }
@@ -310,9 +367,12 @@
             color: var(--text);
         }
 
-        /* Mobile */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 680px) {
+
             .container {
                 width: min(calc(100% - 28px), var(--max-width));
             }
@@ -359,183 +419,242 @@
                 flex-direction: column;
             }
         }
+
+        /* =========================
+           REDUCED MOTION
+        ========================= */
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .policy-card,
+            .card-link span {
+                transition: none;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-<header class="header">
-    <div class="container">
-        <div class="header-content">
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-            <div class="brand">
-                <span class="brand-mark"></span>
-                HOMIES Trading
-            </div>
+    <header class="header">
 
-            <h1>
-                Legal &amp;<br>
-                Policies
-            </h1>
+        <div class="container">
 
-            <p class="hero-text">
-                Official legal and policy information governing HOMIES Trading
-                memberships, access, billing, educational content, community
-                use, and member responsibilities.
-            </p>
+            <div class="header-content">
 
-            <div class="effective">
-                <strong>Effective Date:</strong> 28 September 2026
-            </div>
-
-        </div>
-    </div>
-</header>
-
-
-<main>
-    <div class="container">
-
-        <div class="section-label">
-            Official Documents
-        </div>
-
-        <h2>
-            Membership policies
-        </h2>
-
-        <p class="intro">
-            Please review the applicable documents before purchasing or using
-            a HOMIES Trading membership. These documents explain the terms of
-            membership, billing, cancellations, refunds, and responsible use
-            of the service.
-        </p>
-
-
-        <div class="policies">
-
-            <a
-                class="policy-card"
-                href="terms-and-conditions.html"
-                aria-label="Read Terms and Conditions"
-            >
-                <div class="card-number">
-                    01
+                <div class="brand">
+                    <span class="brand-mark"></span>
+                    HOMIES Trading
                 </div>
 
-                <h3>
-                    Terms &amp; Conditions
-                </h3>
+                <h1>
+                    Legal &amp;<br>
+                    Policies
+                </h1>
 
-                <p>
-                    Terms governing membership access, billing, community use,
-                    educational content, trading-related services,
-                    intellectual property, and member responsibilities.
+                <p class="hero-text">
+                    Official legal and policy information governing HOMIES
+                    Trading memberships, access, billing, educational content,
+                    community use, and member responsibilities.
                 </p>
 
-                <div class="card-link">
-                    Read Terms <span>→</span>
-                </div>
-            </a>
-
-
-            <a
-                class="policy-card"
-                href="refund-policy.html"
-                aria-label="Read Refund Policy"
-            >
-                <div class="card-number">
-                    02
+                <div class="effective">
+                    <strong>Effective Date:</strong>
+                    28 September 2026
                 </div>
 
-                <h3>
-                    Refund Policy
-                </h3>
-
-                <p>
-                    Information about cancellations, monthly and yearly
-                    memberships, duplicate payments, unauthorized transactions,
-                    technical access issues, and approved refunds.
-                </p>
-
-                <div class="card-link">
-                    Read Refund Policy <span>→</span>
-                </div>
-            </a>
-
-        </div>
-
-
-        <div class="notice">
-            <div class="notice-title">
-                Important
             </div>
 
-            <p>
-                HOMIES Trading membership services are intended for educational
-                and informational purposes. Trading and investing involve risk,
-                and no particular profit, return, or financial outcome is
-                guaranteed.
-            </p>
         </div>
 
+    </header>
 
-        <div class="contact">
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main>
+
+        <div class="container">
 
             <div class="section-label">
-                Contact
+                Official Documents
             </div>
 
             <h2>
-                Need help?
+                Membership policies
             </h2>
 
-            <p>
-                For questions regarding membership terms, billing, refunds,
-                access, or other policy-related matters, contact HOMIES Trading
-                using the email below.
+            <p class="intro">
+                Please review the applicable documents before purchasing or
+                using a HOMIES Trading membership. These documents explain the
+                terms of membership, billing, cancellations, refunds, and
+                responsible use of the service.
             </p>
 
-            <a
-                class="email"
-                href="mailto:fxkumud@gmail.com"
-            >
-                fxkumud@gmail.com
-            </a>
+
+            <!-- POLICY CARDS -->
+
+            <div class="policies">
+
+                <!-- TERMS -->
+
+                <a
+                    class="policy-card"
+                    href="https://fxkumud.github.io/homies-trading-membership/terms-and-conditions.html"
+                    aria-label="Read Terms and Conditions"
+                >
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Terms &amp; Conditions
+                    </h3>
+
+                    <p>
+                        Terms governing membership access, billing, community
+                        use, educational content, trading-related services,
+                        intellectual property, and member responsibilities.
+                    </p>
+
+                    <div class="card-link">
+                        Read Terms <span>→</span>
+                    </div>
+
+                </a>
+
+
+                <!-- REFUND -->
+
+                <a
+                    class="policy-card"
+                    href="https://fxkumud.github.io/homies-trading-membership/refund-policy.html"
+                    aria-label="Read Refund Policy"
+                >
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Refund Policy
+                    </h3>
+
+                    <p>
+                        Information about cancellations, monthly and yearly
+                        memberships, duplicate payments, unauthorized
+                        transactions, technical access issues, and approved
+                        refunds.
+                    </p>
+
+                    <div class="card-link">
+                        Read Refund Policy <span>→</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- IMPORTANT NOTICE -->
+
+            <div class="notice">
+
+                <div class="notice-title">
+                    Important
+                </div>
+
+                <p>
+                    HOMIES Trading membership services are intended for
+                    educational and informational purposes. Trading and
+                    investing involve risk, and no particular profit, return,
+                    or financial outcome is guaranteed.
+                </p>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="contact">
+
+                <div class="section-label">
+                    Contact
+                </div>
+
+                <h2>
+                    Need help?
+                </h2>
+
+                <p>
+                    For questions regarding membership terms, billing, refunds,
+                    access, or other policy-related matters, contact HOMIES
+                    Trading using the email below.
+                </p>
+
+                <a
+                    class="email"
+                    href="mailto:fxkumud@gmail.com"
+                >
+                    fxkumud@gmail.com
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-</main>
+    </main>
 
 
-<footer>
-    <div class="container">
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
-        <div class="footer-inner">
+    <footer>
 
-            <div class="footer-brand">
-                HOMIES Trading
-            </div>
+        <div class="container">
 
-            <div>
-                © 2026 HOMIES Trading. All rights reserved.
-            </div>
+            <div class="footer-inner">
 
-            <div class="footer-links">
-                <a href="terms-and-conditions.html">
-                    Terms &amp; Conditions
-                </a>
+                <div class="footer-brand">
+                    HOMIES Trading
+                </div>
 
-                <a href="refund-policy.html">
-                    Refund Policy
-                </a>
+                <div>
+                    © 2026 HOMIES Trading. All rights reserved.
+                </div>
+
+                <div class="footer-links">
+
+                    <a
+                        href="https://fxkumud.github.io/homies-trading-membership/terms-and-conditions.html"
+                    >
+                        Terms &amp; Conditions
+                    </a>
+
+                    <a
+                        href="https://fxkumud.github.io/homies-trading-membership/refund-policy.html"
+                    >
+                        Refund Policy
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
